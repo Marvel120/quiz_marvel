@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MegaStore - E-Commerce Modern</title>
+    <link rel="stylesheet" href="Untitled-2.css">
+    <style>
+        /* RESET & BODY */
+        * { margin:0; padding:0; box-sizing:border-box; font-family:Poppins,sans-serif; }
+        body { background:#f5f6fa; color:#333; scroll-behavior: smooth; }
+
+        /* NAVBAR */
+        .navbar { display:flex; justify-content:space-between; align-items:center; padding:18px 40px; background: linear-gradient(90deg,#0057ff,#00c2ff); color:white; position: sticky; top:0; z-index:1000;}
+        .logo { font-size:26px; font-weight:bold; }
+        .nav-links { display:flex; gap:25px; list-style:none; }
+        .nav-links a { color:white; text-decoration:none; font-weight:500;}
+        .nav-links a:hover { opacity:.7; }
+
+        /* SECTION TITLE */
+        .section-title { text-align:center; margin:35px 0 20px; font-size:32px; color:#222; }
+
+        /* CONTAINER & GRID */
+        .container { padding:20px 40px; }
+        .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:25px; }
+
+        /* CARD */
+        .card { background:white; border-radius:12px; padding:15px; text-align:center; box-shadow:0 3px 10px rgba(0,0,0,0.1); transition:.3s; }
+        .card:hover { transform:translateY(-8px); }
+        .card img { width:100%; height:170px; object-fit:cover; border-radius:8px; }
+        .card h3 { margin-top:12px; }
+        .price { color:#0057ff; font-weight:bold; margin:8px 0; }
+
+        /* HERO */
+        .hero { height:480px; background:url("https://picsum.photos/1600/900?blur=2") center/cover; position:relative; display:flex; align-items:center; justify-content:center; }
+        .overlay { position:absolute; width:100%; height:100%; background:rgba(0,0,0,0.45); }
+        .hero-content { position:relative; color:white; text-align:center; max-width:700px; }
+        .hero-content h1 { font-size:45px; margin-bottom:12px; }
+        .hero-content p { font-size:18px; margin-bottom:25px; }
+        .btn-primary { background:#ffdd00; padding:14px 28px; border-radius:8px; text-decoration:none; font-weight:bold; color:#000; transition:.3s; }
+        .btn-primary:hover { background:#e6c700; }
+
+        /* FOOTER */
+        footer { text-align:center; padding:20px; background:#003bb8; color:white; margin-top:40px; }
+
+        /* ABOUT & CONTACT TEXT */
+        .about-text, .contact-info { text-align:center; font-size:18px; max-width:800px; margin:auto; margin-bottom:40px; }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">MegaStore</div>
+    <ul class="nav-links">
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#kategori">Kategori</a></li>
+        <li><a href="#produk">Produk</a></li>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+    </ul>
+</nav>
+
+<!-- HERO / BERANDA -->
+<section id="beranda" class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+        <h1>Belanja Lebih Mudah & Cepat</h1>
+        <p>Dapatkan produk terbaik dengan kualitas premium dan harga terjangkau.</p>
+        <a href="#produk" class="btn-primary">Mulai Belanja</a>
+    </div>
+</section>
+
+<!-- KATEGORI -->
+<h2 class="section-title" id="kategori">Kategori Populer</h2>
+<div class="container grid">
+    <div class="card"><img src="elektronik.jpg"><h3>Elektronik</h3></div>
+    <div class="card"><img src="fashion.jpg"><h3>Fashion</h3></div>
+    <div class="card"><img src="kecantikan.jpg"><h3>Kecantikan</h3></div>
+    <div class="card"><img src="gaming.jpg"><h3>Gaming</h3></div>
+</div>
+
+<!-- PRODUK -->
+<h2 class="section-title" id="produk">Produk Unggulan</h2>
+<div class="container grid">
+    <div class="card"><img src="headset.jpg"><h3>Headset Gaming RGB</h3><p class="price">Rp 350.000</p></div>
+    <div class="card"><img src="smartwatch.webp"><h3>Smartwatch Pro</h3><p class="price">Rp 499.000</p></div>
+    <div class="card"><img src="sepatu.jpg"><h3>Sepatu Running</h3><p class="price">Rp 270.000</p></div>
+    <div class="card"><img src="skincare.jpg"><h3>Skincare Glowing</h3><p class="price">Rp 180.000</p></div>
+</div>
+
+<!-- TENTANG -->
+<h2 class="section-title" id="tentang">Tentang Kami</h2>
+<div class="container about-text">
+    <p>MegaStore adalah platform belanja modern yang menyediakan berbagai produk berkualitas dengan harga terbaik. Kami berkomitmen memberikan pelayanan terbaik, pengiriman cepat, dan pengalaman belanja aman.</p>
+</div>
+
+<!-- KONTAK -->
+<h2 class="section-title" id="kontak">Kontak Kami</h2>
+<div class="container contact-info">
+    <p>Email: support@megastore.com</p>
+    <p>WhatsApp: 0812-3456-7890</p>
+    <p>Instagram: @megastore_id</p>
+</div>
+
+<!-- FOOTER -->
+<footer>© 2025 MegaStore</footer>
+
+</body>
+</html>
